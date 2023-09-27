@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Downloand</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+        h1 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .info {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 0 20px;
+        }
+        .download {
+            text-align: center;
+            font-size: 25px;
+            border: 3px dashed brown;
+            padding: 20px 0;
+            border-radius: 20px;
+        }
+        .download:hover {
+            background-color:antiquewhite;
+        }
+        .download a {
+            text-decoration: none;
+            color:rgb(86, 1, 1);
+        }
+        .download a:hover {
+            color: rgb(110, 35, 181);
+        }
+        span img {
+            vertical-align: middle;
+        }
+        .cloud {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image:radial-gradient(ellipse, black 80%, transparent 20%),
+                             radial-gradient(circle, black 50%, transparent 50%),
+                             radial-gradient(circle, black 60%, transparent 40%);
+            background-size: 100% 40%, 30% 70%, 60% 80%;
+            background-repeat: no-repeat;
+            background-position: left bottom, left bottom, center bottom;
+            margin-left: -55px;
+            transform: translateY(10px);
+        }
+        .arrow {
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            background-image:linear-gradient(90deg,transparent 30%, #ffcccc 30%, #ffcccc 70%, transparent 70%),
+                             conic-gradient( #ffcccc 0 0.125turn, transparent 0.125turn 0.875turn, #ffcccc 0.875turn 0);
+            background-size:50% 50%,
+                            70% 70%;
+            background-repeat: no-repeat;
+            background-position:center top,
+                                 center bottom;
+            margin-left: -32px;
+            margin-right: 20px;
+            transform: translateY(15px);
+        }
+        .download:hover .arrow {
+            animation: up-down 1s 5;
+        }
+        @keyframes up-down {
+            from {transform: translateY(15px);}
+            to {transform: translateY(25px);}
+        }
+        .image img {
+            width: 500px;
+            height: 300px;
+            margin-left: 170px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Metoda contabilitatii</h1>
+        <p class="info">Metoda contabilitatii cuprinde un ansamblu de procedee care actioneaza ca un tot unitar, in vederea stabilirii normelor
+        si principiilor cu caracter special, cu ajutorul carora contabilitatea cerceteaza starea si miscarea tuturor elementelor
+        patrimoniale, pentru a sesiza legaturile dintre acestea, iar pe aceasta baza, pentru a calcula rezultatele finale ale
+        activitatii si a analiza si controla activitatea desfasurata de unitatile patrimoniale respective. Ca orice disciplina stiintifica, 
+        contabilitatea avand un obiect propriu de cercetare, are totodata o metoda specifica de
+        lucru pentru realizarea obiectului sau.</p>
+        <div class="download"><span><img src="manual/folder-red-icon.png" alt="#">
+            <span class="cloud"></span><span class="arrow"></span>
+        </span><a href="manual/Metoda contabilitatii.pdf" download="">Metoda contabilitatii | Carte</a></div>
+        <p class="info">Procedeele metodice generale, se numesc astfel, deoarece ele se folosesc in cadrul metodei tuturor stiintelor. Dintre
+        acestea cele mai importante sunt: observarea, inregistrarea, clasificarea, rationamentul inductiv si deductiv, analiza,
+        sinteza si altele. Procedeele metodice generale, desi se aplica in toate stiintele, imbraca totusi unele forme
+        caracteristice stiintei ce le foloseste. Astfel, de exemplu, una inseamna analiza in chimie, alta analiza in matematica,
+        altceva inseamna analiza in contabilitate.</p>
+        <div class="image"><img src="manual/cover-25568-540x280-00-85.jpg" alt=""><img src="manual/004_1c.jpg" alt=""></div>
+    </section>
+</body>
+</html>
